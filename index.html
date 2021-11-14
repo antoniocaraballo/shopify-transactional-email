@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width='device-width', initial-scale=1.0" />
+    <title>Transactional Email</title>
+    <style type="text/css">
+      body {
+        margin: 0;
+        padding: 0;
+        text-align: left;
+        background-color: #e0e0e0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .wrapper {
+        width: 100%;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #ffffff;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        
+      }
+
+      .padding-reset {
+        padding-left: 40px;
+        padding-right: 40px;
+      }
+
+      hr {
+        background-color: grey;
+        width: 100%;
+        height: 0.5px;
+        border: none;
+        max-width: 600px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        opacity: 0.5;
+      }
+    </style>
+<script src="https://kit.fontawesome.com/b46afbb9ad.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <!-- Wrapper -->
+    <table class="wrapper" cellspacing="0" cellpadding="0">
+      <!-- Logo -->
+      <tr>
+        <td style="padding-top: 20px;" class="padding-reset">
+          <img src="./imgs/shopify-logo.png" alt="Shopify" width="50px" />
+        </td>
+      </tr>
+      <!-- Info -->
+      <tr>
+        <td class="padding-reset">
+          <!-- Order # -->
+          <h4
+            style="font-weight: lighter; text-transform: uppercase; color: grey"
+          >
+            Order #12345
+          </h4>
+          <!-- Thank You -->
+          <h3 style="font-weight: lighter; font-size: 24px">
+            Thank you for your purchase!
+          </h3>
+          <!-- Main Text -->
+          <p style="font-size: 16px; color: #333333; line-height: 24px">
+            Hi Antonio , your order has been received!
+            <br /><br />
+            Please stay tuned for a shipping notification once your order has
+            been dispatched. If you have ordered multiple items, you may receive
+            multiple shipments.
+            <br /><br />
+            Due to the high volume of orders, please allow for up to 7-21
+            business days for your order to be shipped. We appreciate your
+            continued support and patience.
+            <br /><br />
+            For help with your order, please contact our support team at
+            <span
+              ><a href="#" style="color: rgb(0, 174, 255)"
+                >info@shopify.com</a
+              ></span
+            >
+            with your order number or simply reply to this email.
+          </p>
+        </td>
+      </tr>
+      <!-- Button & Website Link -->
+      <tr>
+        <td>
+          <table style="font-size: 16px">
+            <tr>
+              <td class="padding-reset">
+                <a
+                  href="#"
+                  style="
+                    text-decoration: none;
+                    background-color: #e12121;
+                    color: #ffffff;
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    padding-top: 15px;
+                    padding-bottom: 15px;
+                    border-radius: 3px;
+                  "
+                  >View your order</a
+                >
+              </td>
+              <td>
+                <p style="margin-left: -20px">or</p>
+              </td>
+              <td>
+                <a
+                  href="#"
+                  style="
+                    margin-left: -5px;
+                    color: #e12121;
+                    text-decoration: none;
+                  "
+                  >Visit our store</a
+                >
+              </td>
+            </tr>
+          </table>
+          <!-- Divider -->
+          <hr />
+        </td>
+      </tr>
+      <!-- Order Summary -->
+      <tr>
+        <td class="padding-reset">
+          <h2 style="font-weight: normal; font-size: 20px">Order summary</h2>
+        </td>
+      </tr>
+      <!-- Product -->
+      <tr>
+        <td class="padding-reset">
+          <table>
+            <tr>
+              <!-- IMG -->
+              <td>
+                <img
+                  src="./imgs/product.png"
+                  alt="product"
+                  style="border-radius: 5px; width: 100px"
+                />
+              </td>
+              <!-- Product Info -->
+              <td style="padding-left: 20px; line-height: 5px; width: 200px">
+                <h3 style="color: #333333; font-size: 20px; font-weight: 600">
+                  Regular T-Shirt
+                </h3>
+                <p style="color: grey">Size: M</p>
+              </td>
+              <td style="width: 200px; text-align: right">
+                <h3 style="color: #333333; font-size: 18px; font-weight: 600">
+                  $18.99 USD
+                </h3>
+              </td>
+            </tr>
+          </table>
+          <!-- Divider -->
+          <hr style="margin-top: 20px" />
+        </td>
+      </tr>
+      <!-- Subtotal -->
+      <tr>
+        <td class="padding-reset">
+          <table
+            style="max-width: 350px; margin-left: auto; line-height: 15px"
+            cellspacing="0"
+            cellpadding="0"
+          >
+            <tr>
+              <td
+                style="
+                  text-align: left;
+                  color: grey;
+                  font-size: 18px;
+                  font-weight: lighter;
+                "
+              >
+                <p>Subtotal</p>
+                <p>Shipping</p>
+              </td>
+              <td style="text-align: right">
+                <h3 style="color: #333333; font-size: 18px; font-weight: 600">
+                  $18.99 USD
+                </h3>
+                <h3 style="color: #333333; font-size: 18px; font-weight: 600">
+                  $5.99 USD
+                </h3>
+              </td>
+            </tr>
+            <!-- Divider -->
+            <tr>
+              <td>
+                <hr style="margin-top: 10px; margin-right: 0" />
+              </td>
+              <td>
+                <hr style="margin-top: 10px; margin-right: 0" />
+              </td>
+            </tr>
+            <!-- ToTal -->
+            <tr>
+              <td
+                style="
+                  text-align: left;
+                  color: grey;
+                  font-size: 18px;
+                  font-weight: lighter;
+                "
+              >
+                <p>Total</p>
+              </td>
+              <td style="text-align: right">
+                <h3 style="color: #333333; font-size: 22px; font-weight: 600">
+                  $24.98 USD
+                </h3>
+              </td>
+            </tr>
+            <!-- Divider -->
+            <tr>
+              <td>
+                <hr style="margin-top: 10px; margin-right: 0" />
+              </td>
+              <td>
+                <hr style="margin-top: 10px; margin-right: 0" />
+              </td>
+            </tr>
+
+            <!-- Payment -->
+            <tr>
+              <td
+                style="
+                  text-align: left;
+                  color: grey;
+                  font-size: 18px;
+                  font-weight: lighter;
+                "
+              >
+                <p>Visa ending (01234)</p>
+              </td>
+              <td style="text-align: right">
+                <h3 style="color: #333333; font-size: 18px; font-weight: 600">
+                  $24.98 USD
+                </h3>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <!-- Divider -->
+      <tr>
+        <td>
+          <hr />
+        </td>
+      </tr>
+      <!-- Customer Info -->
+      <tr>
+        <td class="padding-reset" >
+          <h2 style="font-weight: normal; font-size: 20px">
+            Customer information
+          </h2>
+        </td>
+      </tr>
+      <!-- Address -->
+      <tr>
+        <td class="padding-reset">
+          <table cellspacing="0" cellpadding="0" style="width: 600px; color: grey;">
+            <tr>
+              <!-- Shipping -->
+              <td style="padding-right: 80px;">
+                <p style="color: #333333;" >Shipping address</p>
+                <p>Antonio Caraballo</p>
+                <p>
+                  Columbia, SC 29203
+                  <br />
+                  United States
+                </p>
+              </td>
+              <!-- Billing -->
+              <td>
+                <p style="color: #333333;">Billing address</p>
+                <p>Antonio Caraballo</p>
+                <p>
+                  Columbia, SC 29203
+                  <br />
+                  United States
+                </p>
+              </td>
+              <!-- Shipping Method -->
+              <tr>
+                <td>
+                  <p style="color: #333333;">Shipping Method</p>
+                  <p>Stardard Shipping</p>
+                </td>
+                <td>
+                  <p style="color: #333333;">Payment Method</p>
+                  <p><i class="fab fa-cc-visa"></i> Payment Method</p>
+                </td>
+              </tr>
+            </tr>
+          </table>
+          <!-- Divider -->
+          <tr>
+            <td>
+              <hr>
+            </td>
+          </tr>
+        </td>
+      </tr>
+      <!-- Footer -->
+      <tr>
+        <td class="padding-reset" style="font-size: 14px; color: gray; padding-bottom: 40px; text-align: center;">
+          <p>If you have any questions, reply to this email or contact us at  <a href="#" style="color: #e12121; text-decoration: none;">info@shopify.com</a></p>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
